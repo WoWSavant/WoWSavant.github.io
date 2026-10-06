@@ -1,9 +1,9 @@
 /* WoW Savant site - plain CSS, no build step.
-   CACHE-BUSTING: every page links this file as style.css?v=YYYYMMDDx (currently v=20261006b).
+   CACHE-BUSTING: every page links this file as style.css?v=YYYYMMDDx (currently v=20261006c).
    Whenever you change this file, bump that v= value in ALL FOUR pages
-   (index.html, privacy.html, terms.html, refund.html), e.g.:
-     sed -i 's/style.css?v=[0-9a-z]*/style.css?v=NEWVALUE/' *.html
-   so browsers fetch the new CSS instead of a stale cached copy. */
+   (index.html, privacy.html, terms.html, refund.html) so browsers fetch
+   the new CSS instead of a stale cached copy.
+   NOTE: never put a star followed by a slash inside this comment - it ends the comment early. */
 :root {
   --bg: #0b0a08;
   --panel: #15120c;
