@@ -1,4 +1,9 @@
-/* WoW Savant site - plain CSS, no build step */
+/* WoW Savant site - plain CSS, no build step.
+   CACHE-BUSTING: every page links this file as style.css?v=YYYYMMDDx (currently v=20261006b).
+   Whenever you change this file, bump that v= value in ALL FOUR pages
+   (index.html, privacy.html, terms.html, refund.html), e.g.:
+     sed -i 's/style.css?v=[0-9a-z]*/style.css?v=NEWVALUE/' *.html
+   so browsers fetch the new CSS instead of a stale cached copy. */
 :root {
   --bg: #0b0a08;
   --panel: #15120c;
@@ -231,7 +236,8 @@ section { padding: 36px 0; }
 .hero { padding-top: 44px; }
 .hero-icon { width: 150px; height: 150px; }
 .brand-title {
-  font-family: Georgia, "Times New Roman", serif;
+  /* Georgia ships with Windows/macOS; Gelasio is its metric clone on Linux (what the review screenshots used). */
+  font-family: Georgia, Gelasio, "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: clamp(3rem, 10.5vw, 5.5rem);
   line-height: 1.02;
