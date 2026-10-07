@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=20261006c">
+  <link rel="stylesheet" href="style.css?v=20261007a">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -41,7 +41,7 @@
         <ul class="hero-facts">
           <li><strong>$30 once, then $2/month</strong><span>One-off licence plus a subscription you can cancel anytime.</span></li>
           <li><strong>Keep playing while it researches</strong><span>Real answers, usually in about&nbsp;1&#8288;–&#8288;2&nbsp;minutes.</span></li>
-          <li><strong>Powered by your own Grok</strong><span>Needs your own <a href="https://x.ai/pricing" rel="noopener">Grok subscription with Grok Bot</a> (not included).</span></li>
+          <li><strong>Powered by your own Grok</strong><span>Needs your own <a href="#grok-plan">Grok plan that includes Grok Bot</a> (not included).</span></li>
         </ul>
         <p class="small hero-req">Windows 10/11, 64-bit (Intel/AMD). <a href="#requirements">Full requirements</a></p>
       </div>
@@ -186,7 +186,7 @@
       <div class="wrap narrow">
         <h2>Requirements</h2>
         <div class="notice">
-          <p><strong>You need your own Grok subscription with Grok Bot.</strong> It is not included with WoW Savant. Grok Bot must be connected to your PC. See <a href="https://x.ai/pricing" rel="noopener">xAI plans and pricing</a>.</p>
+          <p><strong>You need your own Grok plan that includes Grok Bot.</strong> It is not included with WoW Savant. Grok Bot must be connected to your PC. See <a href="#grok-plan">which plans include Grok Bot</a>.</p>
         </div>
         <div class="grid">
           <div class="panel">
@@ -221,8 +221,32 @@
             <p class="price-sub">one-off licence, then <strong>$2 USD/month</strong></p>
             <p class="price-note">Cancel your subscription anytime.</p>
           </div>
+          <div class="grokbot-notice" id="grok-plan" role="note" aria-labelledby="grok-plan-title">
+            <p class="grokbot-ribbon">Check your Grok plan</p>
+            <div class="grokbot-head">
+              <svg class="grokbot-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                <path d="M24 3 41 9.5v13.2c0 10.6-7.1 19.4-17 22.3C14.1 42.1 7 33.3 7 22.7V9.5L24 3Z" fill="url(#gbShield)" stroke="#fff1c2" stroke-opacity=".55" stroke-width="1.2"/>
+                <path d="m16 24.5 5.6 5.6L33 18.7" fill="none" stroke="#1a1205" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs><linearGradient id="gbShield" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1c2"/><stop offset=".45" stop-color="#f6cf62"/><stop offset="1" stop-color="#b9832a"/></linearGradient></defs>
+              </svg>
+              <h3 id="grok-plan-title">You need Grok Bot</h3>
+            </div>
+            <p class="grokbot-body">WoW Savant needs Grok Bot. It's included with <strong>SuperGrok ($30/mo)</strong>, <strong>SuperGrok Plus ($100/mo)</strong>, <strong>SuperGrok Heavy ($300/mo)</strong>, or a <strong>Cursor Pro, Pro+, Ultra or Teams</strong> plan. <span class="grokbot-no">SuperGrok Lite, SuperGrok Business and the Grok API do not include Grok Bot.</span></p>
+            <figure class="grokbot-shots">
+              <div class="grokbot-shot-row">
+                <img src="assets/xai-supergrok-card.png" width="296" height="310" loading="lazy" decoding="async" alt="Screenshot of the SuperGrok plan card on xAI's plans page: marked Most popular, $30 USD/month, with 'Exclusive access to Grok Bot' highlighted as the first feature.">
+                <img src="assets/xai-grok-card.png" width="315" height="360" loading="lazy" decoding="async" alt="Screenshot of the Grok plan card on xAI's Grok Bot page: SuperGrok selected, $30 / month, billed monthly, with 'Grok Bot access' highlighted under Includes.">
+              </div>
+              <figcaption>Look for &lsquo;Grok Bot&rsquo; in the plan.</figcaption>
+            </figure>
+            <p class="grokbot-links">
+              <a class="btn btn-ghost btn-sm" href="https://x.ai/bot" target="_blank" rel="noopener noreferrer">See xAI's Grok Bot plans<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (opens in a new tab)</span></a>
+              <a class="btn btn-ghost btn-sm" href="https://grok.com/plans" target="_blank" rel="noopener noreferrer">SuperGrok plans<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </p>
+            <p class="grokbot-source">Screenshots from xAI's plan pages, October 2026. Plans and prices are set by xAI and may change.</p>
+          </div>
           <div class="notice" style="text-align:left">
-            <p><strong>Before you buy:</strong> WoW Savant needs your own Grok subscription with Grok Bot (not included), connected to your PC. <a href="https://x.ai/pricing" rel="noopener">See xAI plans</a>.</p>
+            <p><strong>Before you buy:</strong> Grok Bot (not included) must be connected to your PC, and your PC needs:</p>
             <ul class="req-mini">
               <li>Windows 10 or 11, 64-bit, Intel/AMD (x86-64)</li>
               <li>WoW in windowed or borderless mode</li>
@@ -232,7 +256,7 @@
           </div>
           <label class="gate">
             <input type="checkbox" id="buy-confirm">
-            <span>I understand WoW Savant needs my own Grok subscription with Grok Bot, and a Windows 10/11 64-bit PC.</span>
+            <span>I have my own Grok plan that includes Grok Bot (see above), and a Windows 10/11 64-bit PC.</span>
           </label>
           <p class="both-note"><strong>You need both.</strong> Your licence is yours forever – if you ever cancel and come back, you only restart the $2/month.</p>
           <!--
@@ -260,7 +284,11 @@
         </details>
         <details>
           <summary>Do I need a Grok subscription?</summary>
-          <p>Yes. WoW Savant runs on your own Grok subscription with Grok Bot, connected to your PC. It isn't included in the price. See <a href="https://x.ai/pricing" rel="noopener">xAI plans</a>.</p>
+          <p>Yes. WoW Savant runs on your own Grok plan that includes Grok Bot, connected to your PC. It isn't included in the price. See <a href="#grok-plan">which plans include Grok Bot</a>.</p>
+        </details>
+        <details>
+          <summary>Does it work with the Grok API or SuperGrok Lite?</summary>
+          <p>No – it needs a plan that includes Grok Bot: SuperGrok ($30/mo), SuperGrok Plus ($100/mo), SuperGrok Heavy ($300/mo), or a Cursor Pro, Pro+, Ultra or Teams plan. SuperGrok Lite, SuperGrok Business and the Grok API do not include Grok Bot. See <a href="#grok-plan">You need Grok Bot</a> above.</p>
         </details>
         <details>
           <summary>How much does it cost?</summary>
@@ -320,7 +348,7 @@
         <a href="mailto:wowsavant.support@gmail.com">wowsavant.support@gmail.com</a>
       </nav>
       <p>WoW Savant is sold through Lemon Squeezy, our reseller and Merchant of Record, which handles payment, tax and invoicing. Contact: <a href="mailto:wowsavant.support@gmail.com">wowsavant.support@gmail.com</a>.</p>
-      <p>WoW Savant is an independent fan-made tool and isn't affiliated with or endorsed by any game company or website. It is not affiliated with xAI.</p>
+      <p>WoW Savant is an independent fan-made tool and isn't affiliated with or endorsed by any game company or website. It is not affiliated with xAI or Cursor.</p>
     </div>
   </footer>
   <script>

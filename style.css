@@ -1,5 +1,5 @@
 /* WoW Savant site - plain CSS, no build step.
-   CACHE-BUSTING: every page links this file as style.css?v=YYYYMMDDx (currently v=20261006c).
+   CACHE-BUSTING: every page links this file as style.css?v=YYYYMMDDx (currently v=20261007a).
    Whenever you change this file, bump that v= value in ALL FOUR pages
    (index.html, privacy.html, terms.html, refund.html) so browsers fetch
    the new CSS instead of a stale cached copy.
@@ -263,4 +263,96 @@ section { padding: 36px 0; }
 @media (max-width: 600px) {
   .hero { padding-top: 30px; }
   .hero-icon { width: 120px; height: 120px; }
+}
+
+/* v7: "You need Grok Bot" plan notice in the buy box */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.grokbot-notice {
+  position: relative;
+  text-align: left;
+  margin: 26px 0 18px;
+  padding: 30px 26px 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(242, 193, 78, 0.75);
+  background:
+    radial-gradient(120% 90% at 0% 0%, rgba(242, 193, 78, 0.16) 0%, rgba(242, 193, 78, 0) 55%),
+    linear-gradient(180deg, #2a1f0b 0%, #17120a 100%);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.6),
+    0 0 34px rgba(242, 193, 78, 0.16),
+    inset 0 1px 0 rgba(255, 241, 194, 0.18);
+}
+.grokbot-ribbon {
+  position: absolute; top: -13px; left: 22px; margin: 0;
+  padding: 3px 12px;
+  font-size: 0.74rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+  color: #1a1205;
+  background: linear-gradient(#f6cf6a, #d9a536);
+  border: 1px solid #fff1c2;
+  border-radius: 999px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.grokbot-head { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; }
+.grokbot-icon { width: 42px; height: 48px; flex: 0 0 auto; filter: drop-shadow(0 0 10px rgba(242, 193, 78, 0.45)); }
+.grokbot-head h3 {
+  margin: 0;
+  font-family: Georgia, Gelasio, "Times New Roman", serif;
+  font-size: clamp(1.5rem, 4.2vw, 1.9rem);
+  line-height: 1.1;
+  background: linear-gradient(180deg, #fff1c2 0%, #f6cf62 45%, #d9a536 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 0 rgba(60, 38, 8, 0.9));
+}
+.grokbot-body { margin: 0 0 18px; font-size: 1.02rem; }
+.grokbot-body strong { color: var(--gold); white-space: nowrap; }
+.grokbot-no {
+  display: block; margin-top: 10px; padding: 8px 12px 8px 36px; position: relative;
+  background: rgba(255, 120, 110, 0.07); border: 1px solid rgba(255, 155, 155, 0.35); border-radius: 8px;
+  color: #ffd2cc; font-weight: 600; font-size: 0.95rem;
+}
+.grokbot-no::before {
+  content: "\2715"; position: absolute; left: 13px; top: 8px; color: #ff9b9b; font-weight: 800;
+}
+.grokbot-shots { margin: 0 0 16px; }
+.grokbot-shot-row {
+  display: flex; gap: 18px; justify-content: center; align-items: flex-start;
+}
+.grokbot-shot-row img {
+  display: block;
+  width: calc(50% - 9px); max-width: 300px; height: auto;
+  border-radius: 20px;
+  background: #f5f4f2;
+  box-shadow:
+    0 0 0 1px rgba(242, 193, 78, 0.55),
+    0 0 0 5px rgba(242, 193, 78, 0.10),
+    0 14px 30px rgba(0, 0, 0, 0.55);
+  -webkit-mask-image: linear-gradient(180deg, #000 87%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 87%, transparent 100%);
+}
+.grokbot-shots figcaption {
+  margin-top: 12px; text-align: center;
+  font-family: Georgia, Gelasio, serif; font-style: italic; font-size: 1.08rem; color: var(--gold);
+}
+.grokbot-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 0 0 12px; }
+.btn-sm { padding: 8px 16px; font-size: 0.95rem; }
+.btn .ext { margin-left: 6px; font-weight: 800; }
+.grokbot-source { margin: 0; text-align: center; font-size: 0.8rem; color: var(--muted); }
+@media (max-width: 600px) {
+  .grokbot-notice { padding: 28px 16px 16px; margin-top: 22px; }
+  .grokbot-ribbon { left: 14px; }
+  .grokbot-icon { width: 34px; height: 39px; }
+  .grokbot-head { gap: 10px; }
+  .grokbot-head h3 { font-size: clamp(1.1rem, 5.6vw, 1.38rem); white-space: nowrap; }
+  .grokbot-body strong { white-space: normal; }
+  .grokbot-shot-row { flex-direction: column; align-items: center; gap: 16px; }
+  .grokbot-shot-row img { width: 100%; max-width: 280px; }
+  .grokbot-links .btn { flex: 1 1 100%; text-align: center; }
+}
+@media (max-width: 340px) {
+  .grokbot-head h3 { white-space: normal; }
 }
