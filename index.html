@@ -39,7 +39,7 @@
           <a class="btn btn-ghost" href="#ask">See what it knows</a>
         </div>
         <ul class="hero-facts">
-          <li><strong>$30 once, then $2/month</strong><span>One-off licence plus a subscription you can cancel anytime.</span></li>
+          <li><strong>$20 once, then $3/month</strong><span>One-off licence plus a subscription you can cancel anytime.</span></li>
           <li><strong>Keep playing while it researches</strong><span>Real answers, usually in about&nbsp;1&#8288;–&#8288;2&nbsp;minutes.</span></li>
           <li><strong>Powered by your own Grok</strong><span>Needs your own <a href="#grok-plan">Grok plan that includes Grok Bot</a> (not included).</span></li>
         </ul>
@@ -168,7 +168,7 @@
         <ol class="steps">
           <li class="panel">
             <h3>Buy and install</h3>
-            <p>Get your Licence and your subscription, then download and install WoW Savant on your Windows PC.</p>
+            <p>Buy WoW Savant (licence + subscription in one checkout), copy your licence key, then download and install WoW Savant on your Windows PC.</p>
           </li>
           <li class="panel">
             <h3>Run the setup wizard</h3>
@@ -217,8 +217,8 @@
           <h2>Put a Savant in your game</h2>
           <p>Every piece of WoW knowledge, one hotkey away.</p>
           <div class="price-block">
-            <p class="price">$30 <span class="price-unit">USD</span></p>
-            <p class="price-sub">one-off licence, then <strong>$2 USD/month</strong></p>
+            <p class="price">$20 <span class="price-unit">USD</span></p>
+            <p class="price-sub">one-off licence, then <strong>$3 USD/month</strong></p>
             <p class="price-note">Cancel your subscription anytime.</p>
           </div>
           <div class="grokbot-notice" id="grok-plan" role="note" aria-labelledby="grok-plan-title">
@@ -258,19 +258,19 @@
             <input type="checkbox" id="buy-confirm">
             <span>I have my own Grok plan that includes Grok Bot (see above), and a Windows 10/11 64-bit PC.</span>
           </label>
-          <p class="both-note"><strong>You need both.</strong> Your licence is yours forever – if you ever cancel and come back, you only restart the $2/month.</p>
+          <p class="both-note"><strong>One checkout:</strong> $20 licence + first $3 month today. Your licence is yours forever – if you ever cancel and come back, you only restart the $3/month.</p>
           <!--
             CHECKOUT URLS: each button's href below is the ONLY place that checkout link lives.
-            Both are Lemon Squeezy TEST-mode links – swap in the live checkout URLs at launch.
+            Both are Stripe TEST-mode (sandbox) links – swap in the live URLs at launch.
           -->
           <div class="buy-steps">
-            <!-- STEP 1 CHECKOUT URL (Licence, $30 one-off): -->
-            <a id="buy-licence" aria-label="Step 1 – Get your Licence ($30, one-off)" class="btn btn-primary btn-buy buy-gated" href="https://wowsavant.lemonsqueezy.com/checkout/buy/041dbfb2-ae5b-4559-9198-639d6a75d34d"><span class="step-num">Step 1</span> Get your Licence <span class="btn-sub">($30, one-off)</span></a>
-            <!-- STEP 2 CHECKOUT URL (subscription / Lemon Squeezy product "WoW Savant Access", $2/month): -->
-            <a id="buy-access" aria-label="Step 2 – Get your subscription ($2/mo)" class="btn btn-primary btn-buy buy-gated" href="https://wowsavant.lemonsqueezy.com/checkout/buy/dc2673e0-cf84-441c-a7ab-7850151f1f58?enabled=2212206"><span class="step-num">Step 2</span> Get your subscription <span class="btn-sub">($2/mo)</span></a>
+            <!-- NEW BUYER CHECKOUT URL ($20 licence + $3/month, Stripe sandbox payment link): -->
+            <a id="buy-licence" aria-label="Buy WoW Savant ($20 licence + $3/month)" class="btn btn-primary btn-buy buy-gated" href="https://buy.stripe.com/test_dRm9AVgAF8umaZl0OU73G00">Buy WoW Savant <span class="btn-sub">($20 + $3/mo)</span></a>
+            <!-- RESUBSCRIBE URL (already own a licence: $3/month only; the licence server checks the key/email first): -->
+            <a id="buy-access" aria-label="Already own a licence? Resubscribe ($3/mo)" class="btn btn-buy buy-gated" href="https://licence.wowsavant.com/resubscribe">Already own a licence? Resubscribe <span class="btn-sub">($3/mo)</span></a>
           </div>
           <p class="small gate-hint" id="buy-hint" hidden>Tick the box above to continue.</p>
-          <p class="small" style="margin-top:14px">Your keys work on one PC at a time – move them any time with Settings &gt; Deactivate this PC. Payments, tax and receipts are handled by Lemon Squeezy. See the <a href="refund.html">refund policy</a>.</p>
+          <p class="small" style="margin-top:14px">Your licence key works on one PC at a time – move them any time with Settings &gt; Deactivate this PC. Payments are processed securely by Stripe. See the <a href="refund.html">refund policy</a>.</p>
         </div>
       </div>
     </section>
@@ -292,11 +292,11 @@
         </details>
         <details>
           <summary>How much does it cost?</summary>
-          <p>$30 USD for your one-off Licence – yours forever – plus a $2 USD/month subscription. You need both. Cancel your subscription anytime (see below). Your Grok subscription is separate and paid to xAI – see <a href="https://x.ai/pricing" rel="noopener">xAI plans</a>.</p>
+          <p>$20 USD for your one-off Licence – yours forever – plus a $3 USD/month subscription, paid together in one checkout. Cancel your subscription anytime (see below). Your Grok subscription is separate and paid to xAI – see <a href="https://x.ai/pricing" rel="noopener">xAI plans</a>.</p>
         </details>
         <details>
           <summary>What if I cancel?</summary>
-          <p>Cancel your subscription anytime. WoW Savant keeps working until the end of the month you've paid for, then stops until you restart your subscription. Your $30 licence is yours forever – you never pay it again.</p>
+          <p>Cancel your subscription anytime. WoW Savant keeps working until the end of the month you've paid for, then stops until you restart your subscription. Your $20 licence is yours forever – you never pay it again.</p>
         </details>
         <details>
           <summary>Bought only one of the two?</summary>
@@ -324,7 +324,7 @@
         </details>
         <details>
           <summary>Can I use my keys on more than one PC?</summary>
-          <p>Your keys work on one PC at a time – move them any time with Settings &gt; Deactivate this PC. If the old PC is gone, email <a href="mailto:wowsavant.support@gmail.com">wowsavant.support@gmail.com</a> and we'll sort it out.</p>
+          <p>Your licence key works on one PC at a time – move them any time with Settings &gt; Deactivate this PC. If the old PC is gone, email <a href="mailto:wowsavant.support@gmail.com">wowsavant.support@gmail.com</a> and we'll sort it out.</p>
         </details>
         <details>
           <summary>Can I get a refund?</summary>
@@ -347,7 +347,7 @@
         <a href="privacy.html">Privacy policy</a>
         <a href="mailto:wowsavant.support@gmail.com">wowsavant.support@gmail.com</a>
       </nav>
-      <p>WoW Savant is sold through Lemon Squeezy, our reseller and Merchant of Record, which handles payment, tax and invoicing. Contact: <a href="mailto:wowsavant.support@gmail.com">wowsavant.support@gmail.com</a>.</p>
+      <p>Payments are processed securely by Stripe. Contact: <a href="mailto:wowsavant.support@gmail.com">wowsavant.support@gmail.com</a>.</p>
       <p>WoW Savant is an independent fan-made tool and isn't affiliated with or endorsed by any game company or website. It is not affiliated with xAI or Cursor.</p>
     </div>
   </footer>
